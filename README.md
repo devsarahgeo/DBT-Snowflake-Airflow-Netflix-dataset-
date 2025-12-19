@@ -6,7 +6,9 @@ This repository demonstrates a **data engineering workflow** using **dbt**, **Sn
 ---
 💼 **Business Problem**  
 Analysts and data engineers often need reliable pipelines to transform raw datasets into **analysis-ready tables**. This Movie Streaming dataset project automates data ingestion, ensures data quality, and enable insights without manual intervention. This project addresses the end-to-end workflow from **raw data in Snowflake** to **analysis-ready tables** via dbt models orchestrated with Airflow.
-<img width="1162" height="1050" alt="Screenshot 2025-12-19 at 10 51 58 AM" src="https://github.com/user-attachments/assets/d70386ce-6830-4e46-9973-d2991ad52b0a" />
+
+⚙️ **SYSTEM DESIGN**  
+<img width="1418" height="919" alt="DBT Architecture drawio" src="https://github.com/user-attachments/assets/4fb98f47-54c0-4494-af79-ad74ccaa78fa" />
 
 ⚙️ **Methodology**  
 
@@ -14,7 +16,7 @@ Analysts and data engineers often need reliable pipelines to transform raw datas
    - Loaded Movie CSV datasets into Snowflake  
    - Configured dbt seeds for small reference tables
    - Used Airflow DAGs to automate dbt runs on a schedule
-<img width="965" height="766" alt="Screenshot 2025-12-18 at 10 57 20 PM" src="https://github.com/user-attachments/assets/8a6997eb-e64d-4893-8836-dee1421f7f55" />
+<img width="1382" height="1010" alt="Screenshot 2025-12-19 at 12 26 53 PM" src="https://github.com/user-attachments/assets/85edcc9f-a784-4941-b083-080c04f8b09e" />
 
 2. **Data Transformation with dbt**  
    - Created **dimension (`dim`) tables**: movies, users, tags.  
@@ -34,7 +36,8 @@ Analysts and data engineers often need reliable pipelines to transform raw datas
    - Applied dbt tests to ensure data quality.
 
 3. **Workflow Orchestration with Airflow**  
-   - Scheduled dbt runs daily via Airflow DAGs.  
+   - Scheduled dbt runs daily via Airflow DAGs.
+<img width="965" height="766" alt="Screenshot 2025-12-18 at 10 57 20 PM" src="https://github.com/user-attachments/assets/8a6997eb-e64d-4893-8836-dee1421f7f55" />
 
 🧠 **Skills & Tech Stack**  
 - **Languages & Libraries**: SQL
