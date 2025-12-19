@@ -23,6 +23,3 @@ models:
       +materialized: table 
     fct:
       +materialized: table
-    analysis:
-      +materialized: table
-      +schema: ANALYSIS
